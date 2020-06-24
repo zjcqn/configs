@@ -11,10 +11,11 @@ map <C-l> <C-W>l
 
 " 快速保存和退出
 nnoremap <leader>q :q<CR>
-nnoremap <leader>w :w<CR>
+nnoremap <leader>s :w<CR>
+nnoremap <leader>w :wq<CR>
 
 syntax on					"语法自动高亮
-set cursorline				" 高亮当前行
+set cursorline				"高亮当前行
 set mouse=a					"鼠标支持
 set encoding=utf-8
 set fileencoding=utf-8
@@ -25,7 +26,7 @@ set incsearch				" 输入搜索内容时就显示搜索结果
 set laststatus=2			" 显示状态栏 (默认值为 1, 无法显示状态栏)
 set nocompatible			" 关闭 vi 兼容模式
 set number					" 显示行号
-set paste					" 解决拷贝的时遇到注释会自动注释后续所有行的问题
+"set paste					" 解决拷贝的时遇到注释会自动注释后续所有行的问题
 set ruler					" 打开状态栏标尺
 set showcmd					"（在右下角）显示现有的命令
 set shiftwidth=4			" 设定 << 和 >> 命令移动时的宽度为 4
